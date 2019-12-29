@@ -229,4 +229,13 @@ td {
     width: 270px;
     height: 230px;
   }
+
+  #sponsors {
+    flex-direction: column;
+  }
+
+  #sponsors > *:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
 }
