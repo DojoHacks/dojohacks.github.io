@@ -1,2 +1,2 @@
 # DojoHacks 2020
-Website for the CoderDojo Silicon Valley hackathon
+A website for CoderDojo Silicon Valley's DojoHacks 2020 hackathon
