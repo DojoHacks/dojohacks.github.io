@@ -1,0 +1,138 @@
+<html>
+<head>
+  <title>DojoHacks 2020</title>
+  <link rel="stylesheet" type="text/css" href="styles.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body>
+  <div class="margins">
+    <div id="home" class="row fill">
+      <div class="column">
+        <div class="row">
+          <img src="/resources/coderdojoSiliconValleyLogo.png" height="80" />
+          <span class="separator"></span>
+          <img src="/resources/logo.png" height="80" />
+        </div>
+
+        <img alt="DojoHacks 2020" src="/resources/logoWordmark.png" width="270px" height="27px" />
+        <hr />
+        <h1>CoderDojo Silicon Valley<br />Hackathon</h1>
+
+        <div>
+          <h2>@ Saratoga Library</h2>
+          <p class="secondary">Feburary 1-2, 8AM-6PM</p>
+        </div>
+
+        <a class="button" href="#">Register</a>
+      </div>
+
+      <div id="taglineContainer">
+        <p class="tagline">A hackathon for youth, focused on teaching and educating them how to code while they brainstorm and create tools for others to learn.</p>
+      </div>
+    </div>
+
+    <div style="display: flex; justify-content: center;">
+      <button class="button" id="moreinfo" style="position: absolute; bottom: 20px;"><img src="/resources/arrow.png" height="13px" /><span>More Info</span></button>
+    </div>
+  </div>
+
+  <div id="details">
+    <div class="margins column">
+      <div class="column">
+        <h1>Age Range</h1>
+        <p>13-17 years old</p>
+      </div>
+
+      <div class="column">
+        <h1>Our Theme</h1>
+        <p>Education</p>
+      </div>
+
+      <div class="column">
+        <h1>Schedule</h1>
+        <h2>Day 1</h2>
+
+        <table>
+          <tr>
+            <th>8:30-9:00 AM</th>
+            <td>Drop-off/Check-in</td>
+          </tr>
+
+          <tr>
+            <th>9:00-9:30 AM</th>
+            <td>Opening Ceremony</td>
+          </tr>
+
+          <tr>
+            <th>9:30 AM</th>
+            <td>Start Hacking</td>
+          </tr>
+
+          <tr>
+            <th>12:30-1:30 PM</th>
+            <td>Lunch</td>
+          </tr>
+
+          <tr>
+            <th>5:30-6:00 PM</th>
+            <td>Wrap up/pick-up</td>
+          </tr>
+        </table>
+
+        <h2>Day 2</h2>
+
+        <table>
+          <tr>
+            <th>8:30 AM</th>
+            <td>Doors Open</td>
+          </tr>
+
+          <tr>
+            <th>11:30-12:30 AM</th>
+            <td>Lunch</td>
+          </tr>
+
+          <tr>
+            <th>12:30-1:30 PM</th>
+            <td>Presenting</td>
+          </tr>
+
+          <tr>
+            <th>1:30-2:30 PM</th>
+            <td>Judging</td>
+          </tr>
+
+          <tr>
+            <th>2:30-3:00 PM</th>
+            <td>Awards</td>
+          </tr>
+        </table>
+      </div>
+
+      <div class="column">
+        <h1>Location</h1>
+        <iframe id="map" width="480" height="360" src="https://maps.google.com/maps?q=saratoga%20library&amp;t=&amp;z=13&amp;ie=UTF8&amp;iwloc=&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe id="map">
+      </div>
+
+      <div class="column">
+        <h1>Our Sponsors</h1>
+
+        <div class="row">
+          <a href="http://coderdojosv.org/"><img src="/resources/coderdojoSiliconValleySponsorLogo.png" height="59" /></a>
+          <a href="https://www.sccl.org/"><img src="/resources/scclSponsorLogo.png" height="59" /></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    document.getElementById("moreinfo").onclick = function() {
+      window.scroll({
+        top: document.getElementById("home").offsetHeight,
+        left: 0, 
+        behavior: 'smooth' 
+      })
+    }
+  </script>
+</body>
+</html>
