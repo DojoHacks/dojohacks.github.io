@@ -114,7 +114,7 @@ th {
 }
 
 p.tagline {
-  font-size: 40px;
+  font-size: 45px;
   font-weight: bold;
   letter-spacing: -1.5px;
   opacity: 0.75;
@@ -162,22 +162,42 @@ hr {
   background-color: #1B1B1B;
 
   padding: 40px 0;
+
+  width: 100%;
 }
 
-table {
-  background-color: #111;
+#details > .column {
+  align-items: stretch;
 }
 
 table,
 th,
 td {
-  border: 2px solid #333;
   border-collapse: collapse;
+}
+
+table {
+  background-color: #111;
+  border-radius: 3px;
+  border-style: hidden;
+  box-shadow: 0 0 0 2px #333;
 }
 
 th,
 td {
-  padding: 5px;
+  padding: 7px;
+}
+
+table tr > *:first-child {
+  border-right: 0;
+}
+
+table tr > *:last-child {
+  border-left: 0;
+}
+
+table tr:nth-child(even) {
+  background-color: #222;
 }
 
 @media screen and (max-width: 816px) {
@@ -208,9 +228,10 @@ td {
     background: linear-gradient(#00A2FF, #62CBC4);
     background-clip: text;
     box-sizing: border-box;
-    font-size: 30px;
+    font-size: 35;
     letter-spacing: -1px;
-    text-align: center;
+    opacity: 1;
+    text-align: left;
     
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -223,6 +244,18 @@ td {
   #taglineContainer {
     background: #111;
     padding: 50px;
+  }
+
+  table {
+    width: 100%;
+  }
+
+  table tr th:first-child {
+    min-width: 150px;
+  }
+
+  table tr td {
+    width: 100%;
   }
 }
 
