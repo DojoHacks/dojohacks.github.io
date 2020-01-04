@@ -54,11 +54,11 @@ body {
 }
 
 .button {
-  background: #1B1B1B;
+  background: #FFCC1C;
   border: 0;
   border-radius: 20px;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
-  color: white;
+  color: #1B1B1B;
   font-size: 17px;
   transition: opacity 100ms ease-out;
 
@@ -76,8 +76,23 @@ body {
   opacity: 0.75;
 }
 
+.button.secondary {
+  background: #1B1B1B;
+  color: white;
+}
+
+.button.secondary.inverse {
+  background: #FFF;
+  color: #1B1B1B;
+}
+
+.button.inverse:focus {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15), 0 0 0 4px rgba(255, 255, 255, 0.20);
+  outline: 0;
+}
+
 .button > img {
-  margin-right: 10px;
+  margin-left: 10px;
 }
 
 h1 {
@@ -90,6 +105,7 @@ h2,
 a,
 p,
 th,
+li,
 td {
   color: white;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
@@ -97,10 +113,19 @@ td {
   margin: 0;
 }
 
+ol {
+  margin: 0;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
 h2,
 p,
 th,
-td {
+td,
+li {
   font-size: 17px;
 }
 
@@ -121,7 +146,7 @@ p.tagline {
   text-align: right;
 }
 
-.secondary {
+p.secondary, span.secondary {
   opacity: 0.75;
 }
 
@@ -186,7 +211,7 @@ table tr:nth-child(even) {
   background-color: #222;
 }
 
-@media screen and (max-width: 816px) {
+@media screen and (max-width: 808px) {
   body > .margins {
     padding: 0;
   }
@@ -207,7 +232,7 @@ table tr:nth-child(even) {
 
   .row.fill > *:not(:last-child) {
     margin-right: 0;
-    margin-bottom: 50px;
+    margin-bottom: 100px;
   }
 
   p.tagline {
