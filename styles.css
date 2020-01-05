@@ -14,6 +14,13 @@ body {
   margin: 0;
 }
 
+body > .margins {
+  background-image: url('/resources/logoTransparent.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
 .margins {
   margin: 0 auto;
   padding: 0 50px;
@@ -213,6 +220,7 @@ table tr:nth-child(even) {
 
 @media screen and (max-width: 808px) {
   body > .margins {
+    background-image: none;
     padding: 0;
   }
 
