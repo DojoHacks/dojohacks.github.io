@@ -120,12 +120,21 @@ td {
   margin: 0;
 }
 
-ol {
+ol,
+ul {
   margin: 0;
 }
 
-li {
+ol li {
   margin-bottom: 10px;
+}
+
+ul {
+  padding-left: 15px;
+}
+
+ul li:not(:last-child) {
+  margin-bottom: 5px;
 }
 
 h2,
